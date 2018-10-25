@@ -5,12 +5,15 @@ pipeline {
        steps {
         sh 'echo test' 
       }
-    
-
       }
-    stage('Build'){
+     stage('Build'){
       steps{
         sh'echo building'
+      }
+    }
+    stage('Deploy'){
+      steps{
+        sh'echo deploy')
       }
     }
     
