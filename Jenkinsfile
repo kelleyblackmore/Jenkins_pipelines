@@ -1,24 +1,25 @@
 pipeline {
-  agent {
-    node {
-      any
-    }
-  }
+  agent any 
 
 options {
   ansiColor('xterm')
 }
    stages{
-     stage('Lint') {
+     stage('Test') {
        steps {
-        sh 'echo hello' 
+        sh 'echo test' 
       }
        steps {
        sh 'uname'
        }
 
       }
-
+    stage('Build'){
+      steps{
+        sh'echo building'
+      }
+    }
+    
 
 }
 
