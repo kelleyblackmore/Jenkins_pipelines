@@ -18,4 +18,4 @@ def pv_f(fv,r,n):
     return fv/(1+r)**n
 
 
-pv_f(100,0.1,1)
+print(pv_f(100,0.1,1))
