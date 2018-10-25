@@ -13,7 +13,12 @@ pipeline {
     }
     stage('Deploy'){
       steps{
-        sh'echo deploy')
+        sh'echo deploy'
+      }
+    }
+    stage('Run app'){
+      steps{
+        sh'python app.py'
       }
     }
     
